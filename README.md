@@ -90,25 +90,3 @@ assistant with common text editors, such as VS Code, Emacs, or Vim.
 | ---- | ---- | ------ | ------ | ---- |
 | 1 | 9 Sep | Verified Functional Programs: introduction | <!-- [Lecture 1 (slides)](lecture1.pdf) <br> [Lecture Notes](notes_fp.pdf) --> | |
 | 1 | 9, 10 Sep | Introduction to the Rocq Proof Assistant | | <!-- [Lab 1 (.pdf)](lab1/lab1.pdf) <br> [Rocq file (.v)](lab1/lab1.v) <br> [Solutions (.v)](lab1/lab1_solutions.v) --> |
-<!-- | 2 | 16 Sep | Proof by induction | [Lecture 2 (slides)](lecture2.pdf) <br> [Lecture Notes](notes_induction.pdf) | | -->
-<!-- | 2 | 16, 17 Sep | Exercises on proof by induction | | [Lab 2 (.pdf)](lab2/lab2.pdf) <br> [Rocq file (.v)](lab2/lab2.v) <br> [Solutions (.v)](lab2/lab2_solutions.v) | -->
-<!-- | 3 | 23 Sep | Inductively defined properties and verification of abstract data types | [Lecture 3 (slides)](lecture3.pdf) <br> [Lecture Notes](notes_inductive_properties.pdf) | | -->
-<!-- | 3 | 23, 24 Sep | Verified Skew Heaps | | [Lab 3 (.pdf)](lab3/lab3.pdf) <br> [Rocq file (.v)](lab3/lab3.v) <br> [Solutions (.v)](lab3/lab3_solutions.v) | -->
-<!-- | 4 | 30 Sep | Introduction to Hoare Logic | [Lecture 4 (slides)](lecture4.pdf) <br> [Demo file (.mlw)](demo.mlw) <br> [Lecture Notes](notes_hoare_logic.pdf) <br> [First Handout Criteria](sv_handout1_evaluation_criteria.pdf) | | -->
-<!-- | 4 | 31 Sep, 1 Oct | Support class for Handout 1 | | | -->
-<!-- | 5 | 7 Oct | Loop Invariants in Hoare Logic and Weakest Precondition Calculus | [Lecture 5 (slides)](lecture5.pdf) <br> [Lecture Notes](notes_loops_wp.pdf) | | -->
-<!-- | 5 | 7 Oct, 8 Oct | Introduction to the Why3 Tool | | [Lab 5 (.pdf)](lab5/lab5.pdf) <br> [Why3 file (.mlw)](lab5/lab5.mlw) <br> [Solutions (.zip)](lab5/lab5_solutions.zip) | -->
-<!-- | 6 | 14 Oct | Loop Invariants, Sorting Algorithms, Bounded Integers | [Lecture 6 (slides)](lecture6.pdf) <br> [Lecture Notes](notes_sorting_searching.pdf)| | -->
-<!-- | 6 | 14 Oct, 15 Oct | Exercises on Loop Invariants and Matrices |  | [Lab 6 (.pdf)](lab6/lab6.pdf) <br> [Solutions (.zip)](lab6/lab6_solutions.zip) | -->
-<!-- | 7 | 21 Oct | Verification of Abstract Data Types and Ghost Code | [Lecture 7 (slides)](lecture7.pdf) | | -->
-<!-- | 7 | 21 Oct, 22 Oct | More exercises on Matrices and Verification of an Abstract Data Type |   | [Lab 7 (.pdf)](lab7/lab7.pdf) <br> [Why3 file (.mlw)](lab7/lab7.mlw) <br> [Solutions (.zip)](lab7/lab7_solutions.zip)| -->
-<!-- | 8 | 28 Oct | ADTs and Typestates | [Lecture 8 (slides)](lecture8.pdf) <br> [Demo file (.mlw)](cicular.mlw) | | -->
-<!-- | 8 | 28 Oct, 29 Oct | Exercises on ADTs and Typestates |   | [Lab 8 (.pdf)](lab8/lab8.pdf) <br> [Why3 file (.mlw)](lab8/lab8.mlw)<br> [Solutions (.zip)](lab8/lab8_solutions.zip) | -->
-<!-- | 9 | 4 Nov | Separation Logic: Introduction | [Lecture 9 (slides)](lecture9.pdf) <br> [Demo files (.zip)](demo_lecture9.zip) | | -->
-<!-- | 9 | 4 Nov, 5 Nov | Support class for Handout 2 |   | | -->
-<!-- | 10 | 11 Nov | Separation Logic: Data Structures | [Lecture 10 (slides)](lecture10.pdf) | | -->
-<!-- | 10 | 11 Nov, 12 Nov | Exercises on Data Structures in Separation Logic |   | [Lab 10 (.pdf)](lab10/lab10.pdf) <br> [Extra Exercise on Data Structures (2023-2024 Handout 3)](lab10/cvs_2324_handout3.pdf) <br> [Queue Data Structure](lab10/Queue.java) | -->
-<!-- | 11 | 18 Nov | Separation Logic: Concurrency | [Lecture 11 (slides)](lecture11.pdf) | | -->
-<!-- | 11 | 18 Nov, 19 Nov | Exercises on Concurrency in Separation Logic |   | [Lab 11 (.pdf)](lab11/lab11.pdf) | -->
-<!-- | 12 | 25 Nov | Separation Logic: Fractional Permissions | [Lecture 12 (slides)](lecture12.pdf) | | -->
-<!-- | 12 | 25 Nov, 26 Nov | Support class for Handout 3 |   |  | -->
