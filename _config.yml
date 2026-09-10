@@ -5,8 +5,9 @@ repository: "mariojppereira/software-verification-nsst"
 description: Software Verification Course at Nova School of Science and Technology
 
 plugins:
-- jekyll-gfm-admonitions
-- jekyll-optional-front-matter
+  - jekyll-gfm-admonitions
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
 
 exclude:
   - "**/*.ts" # Exclude source code files!

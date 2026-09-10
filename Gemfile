@@ -6,4 +6,5 @@ group :jekyll_plugins do
   gem 'jekyll-gfm-admonitions'
   gem 'jekyll-optional-front-matter'
   gem 'jekyll-remote-theme'
+  gem 'jekyll-readme-index'
 end
