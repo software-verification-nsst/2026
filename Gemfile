@@ -1,12 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'rexml'
+gem 'jekyll', '~> 4.3'
 
 group :jekyll_plugins do
   gem 'jekyll-gfm-admonitions'
   gem 'jekyll-optional-front-matter'
-  gem 'github-pages'
+  gem 'jekyll-remote-theme'
 end
-
-gem 'jekyll-remote-theme'
