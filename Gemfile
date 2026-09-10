@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3'
+gem 'jekyll-theme-primer'
 
 group :jekyll_plugins do
   gem 'jekyll-gfm-admonitions'
