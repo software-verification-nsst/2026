@@ -4,10 +4,15 @@ title: null
 repository: "mariojppereira/software-verification-nsst"
 description: Software Verification Course at Nova School of Science and Technology
 
+theme: jekyll-theme-primer
+
 plugins:
   - jekyll-gfm-admonitions
   - jekyll-optional-front-matter
+  - jekyll-remote-theme
   - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
 
 exclude:
   - "**/*.ts" # Exclude source code files!
