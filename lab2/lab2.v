@@ -6,45 +6,23 @@ Import ListNotations. (* Syntactic-sugar for list values *)
 
 Lemma add_0_r : forall n: nat,
     n + 0 = n.
-Proof. lia.
-  (* intros n. *)
-  (* induction n. *)
-  (* - simpl. reflexivity. *)
-  (* - simpl. rewrite IHn. *)
-  (*   reflexivity. *)
-Qed.
+Proof.
+Admitted.
 
 Lemma mult_0_r : forall n: nat,
     n * 0 = 0.
 Proof.
-  intros n.
-  induction n.
-  - reflexivity.
-  - simpl. rewrite IHn.
-    reflexivity.
-Qed.
+Admitted.
 
 Lemma plus_n_Sm : forall n m: nat,
     S (n + m) = n + S m.
 Proof.
-  intros n m.
-  induction n.
-  - simpl. reflexivity.
-  - simpl. rewrite IHn.
-    reflexivity.
-Qed.
+Admitted.
 
 Lemma add_comm : forall n m: nat,
     n + m = m + n.
 Proof.
-  intros n m.
-  induction n.
-  - simpl. lia. (* rewrite add_0_r. reflexivity. *)
-  - simpl. rewrite IHn.
-    Search (S (_ + _)).
-    rewrite plus_n_Sm.
-    auto.
-Qed.
+Admitted
 
 Lemma add_assoc : forall n m p: nat,
     n + (m + p) = (n + m) + p.
@@ -66,13 +44,7 @@ Fixpoint pow (n: nat) (m: nat) (r: nat) : nat :=
 Lemma pow_correct : forall n m r: nat,
     pow n m r = r * power n m.
 Proof.
-  intros n m.
-  generalize dependent n.
-  induction m.
-  - intros n r. simpl. lia.
-  - intros n r. simpl. rewrite IHm.
-    lia.
-Qed.
+Admitted.
 
 Definition power_alt (n: nat) (m: nat) : nat :=
   pow n m 1.
@@ -80,11 +52,7 @@ Definition power_alt (n: nat) (m: nat) : nat :=
 Lemma power_alt_correct : forall n m: nat,
     power n m = power_alt n m.
 Proof.
-  intros n m.
-  unfold power_alt.
-  rewrite pow_correct.
-  lia.
-Qed.
+Admitted.
 
 Fixpoint fact (n: nat) : nat :=
   match n with
@@ -113,26 +81,18 @@ Admitted.
 
 Lemma nil_app: forall l : list nat,
     [ ] ++ l  = l.
-Proof. intros l. simpl. reflexivity. Qed.
+Proof.
+Admitted.
 
 Lemma app_assoc : forall l1 l2 l3: list nat,
     (l1 ++ l2) ++ l3 = l1 ++ (l2 ++ l3).
 Proof.
-  intros l1.
-  induction l1.
-  - intros l2 l3. simpl. reflexivity.
-  - intros l2 l3. simpl.
-    rewrite IHl1. reflexivity.
-Qed.
+Admitted.
 
 Lemma app_nil_r : forall l : list nat,
     l ++ [ ] = l.
 Proof.
-  intros l. induction l.
-  - reflexivity.
-  - simpl. rewrite IHl.
-    reflexivity.
-Qed.
+Admitted.
 
 Fixpoint rev (l: list nat) : list nat :=
   match l with
@@ -143,12 +103,7 @@ Fixpoint rev (l: list nat) : list nat :=
 Lemma rev_length : forall l: list nat,
     length (rev l) = length l.
 Proof.
-  intros l. induction l.
-  - simpl. reflexivity.
-  - simpl. Search (length (_ ++ _)).
-    rewrite app_length. rewrite IHl.
-    simpl. lia.
-Qed.
+Admitted.
 
 Lemma rev_app_distr : forall l1 l2 : list nat,
     rev (l1 ++ l2) = rev l2 ++ rev l1.
@@ -182,10 +137,4 @@ Proof. reflexivity. Qed.
 Lemma mirror_involutive: forall t: tree,
     mirror (mirror t) = t.
 Proof.
-  intros t. induction t.
-  - (* t = Leaf *)
-    reflexivity.
-  - (* t = Node l v r *)
-    simpl. rewrite IHt1. rewrite IHt2.
-    reflexivity.
-Qed.
+Admitted.
