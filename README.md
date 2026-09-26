@@ -8,11 +8,11 @@ Please inform before (by email) that you plan to attend office hours.
 | ------------- | -------- | ------ |
 | Mário Pereira | Monday, 14h00 (Office 243) | mjp.pereira@fct.unl.pt |
 
-<!-- ## Handouts -->
+## Handouts
 
-<!-- | Handout | Statement                           | Companion files                      | -->
-<!-- |---------|-------------------------------------|--------------------------------------| -->
-<!-- | 1       | [Handout 1 (.pdf)](sv_handout1.pdf) | [proper_cuts.v](proper_cuts.v)       | -->
+| Handout | Statement                           | Companion files                      |
+|---------|-------------------------------------|--------------------------------------|
+| 1       | [Handout 1 (.pdf)](sv_handout1.pdf) | [arith.v](arith.v)       |
 <!-- | 2       | [Handout 2 (.pdf)](sv_handout2.pdf) | [delannoy.zip](delannoy.zip)         | -->
 <!-- | 3       | [Handout 3 (.pdf)](sv_handout3.pdf) | [PairingHeap.java](PairingHeap.java) | -->
 
