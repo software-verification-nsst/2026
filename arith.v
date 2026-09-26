@@ -3,11 +3,11 @@
     found in the loadpath!], then it probably means you are using an older
     version of Rocq. Try changing [Stdlib] everywhere into [Rocq]. *)
 
-From Stdlib Require Import ZArith.
-From Stdlib Require Import Lists.List.
-From Stdlib Require Import Lia.
-From Stdlib Require Import Bool.
-From Stdlib Require Import String.
+From Coq Require Import ZArith.
+From Coq Require Import Lists.List.
+From Coq Require Import Lia.
+From Coq Require Import Bool.
+From Coq Require Import String.
 
 Import ListNotations.
 
@@ -130,7 +130,7 @@ Admitted. (* FILL HERE, exercise 8 *)
 
 Lemma compile_correct_gen : forall (e: expr) (n: Z) (s: stack),
     red_expr_star e n ->
-    red_asm_star stack (compile e) = ORes (n :: stack).
+    red_asm_star s (compile e) = ORes (n :: s).
 Proof.
 Admitted. (* FILL HERE, exercise 9 *)
 
