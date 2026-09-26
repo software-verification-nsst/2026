@@ -10,11 +10,9 @@ Please inform before (by email) that you plan to attend office hours.
 
 ## Handouts
 
-| Handout | Statement                           | Companion files                      |
-|---------|-------------------------------------|--------------------------------------|
-| 1       | [Handout 1 (.pdf)](sv_handout1.pdf) | [arith.v](arith.v)       |
-<!-- | 2       | [Handout 2 (.pdf)](sv_handout2.pdf) | [delannoy.zip](delannoy.zip)         | -->
-<!-- | 3       | [Handout 3 (.pdf)](sv_handout3.pdf) | [PairingHeap.java](PairingHeap.java) | -->
+| Handout | Statement                           | Companion files    |
+|---------|-------------------------------------|--------------------|
+| 1       | [Handout 1 (.pdf)](sv_handout1.pdf) | [arith.v](arith.v) |
 
 ## Installation procedures
 
