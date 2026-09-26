@@ -3,11 +3,11 @@
     found in the loadpath!], then it probably means you are using an older
     version of Rocq. Try changing [Stdlib] everywhere into [Rocq]. *)
 
-From Coq Require Import ZArith.
-From Coq Require Import Lists.List.
-From Coq Require Import Lia.
-From Coq Require Import Bool.
-From Coq Require Import String.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lists.List.
+From Stdlib Require Import Lia.
+From Stdlib Require Import Bool.
+From Stdlib Require Import String.
 
 Import ListNotations.
 
