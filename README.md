@@ -55,32 +55,32 @@ Regarding editors, Rocq comes with its own IDE. This is installed with
 the Rocq Platform. There are also very smooth integration of the proof
 assistant with common text editors, such as VS Code, Emacs, or Vim.
 
-<!-- ### The Why3 framework -->
+### The Why3 framework
 
-<!-- The Why3 framework is going to be our tool of choice for the second -->
-<!-- part of the Software Verification course. -->
+The Why3 framework is going to be our tool of choice for the second
+part of the Software Verification course.
 
-<!-- In order to install Why3 and its ecosystem, please follow the -->
-<!-- installation guide provided [here](install_why3.md). -->
+In order to install Why3 and its ecosystem, please follow the
+installation guide provided [here](install_why3.md).
 
-<!-- The Why3 framework has been around for a few years now, and it has -->
-<!-- been the subject of very intense development and research. You should -->
-<!-- definitely know and check, on a regular basis, the following three -->
-<!-- websites: -->
+The Why3 framework has been around for a few years now, and it has
+been the subject of very intense development and research. You should
+definitely know and check, on a regular basis, the following three
+websites:
 
-<!--   - The framework manual: https://www.why3.org/doc/ -->
+  - The framework manual: https://www.why3.org/doc/
 
-<!--     Other than providing a very comprehensive presentation of the -->
-<!--     framework and underlying tools, the third chapter is of mandatory -->
-<!--     reading for those learning to do proofs with Why3. -->
+    Other than providing a very comprehensive presentation of the
+    framework and underlying tools, the third chapter is of mandatory
+    reading for those learning to do proofs with Why3.
 
-<!--   - The standard library: https://www.why3.org/stdlib/ -->
+  - The standard library: https://www.why3.org/stdlib/
 
-<!--   - Finally, the huge gallery of verified programs: -->
-<!--     https://toccata.gitlabpages.inria.fr/toccata/gallery/why3.en.html -->
+  - Finally, the huge gallery of verified programs:
+    https://toccata.gitlabpages.inria.fr/toccata/gallery/why3.en.html
 
-<!--     This is probably the best source to learn specification and -->
-<!--     programming using WhyML, the programming language of Why3. -->
+    This is probably the best source to learn specification and
+    programming using WhyML, the programming language of Why3.
 
 ## Planning
 
