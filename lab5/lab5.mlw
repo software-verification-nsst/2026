@@ -128,9 +128,6 @@ module Division
   = let ref q = 0 in
     let ref r = x in
     while r >= y do
-      invariant { x = y * q + r } (* Exercise 7 *)
-      invariant { r >= 0 }
-      variant   { r }    (* Exercise 7 *)
       r <- r - y;
       q <- q + 1
     done;
@@ -200,8 +197,6 @@ module AddList
   = let ref acc = 0 in
     let ref it = l in
     while not is_nil it do
-      invariant { add l = acc + add it }
-      variant   { it }
       match it with
       | Nil -> absurd
       | Cons x xs ->
