@@ -32,75 +32,18 @@ module BST : Set
   use int.Int
   use set.Fset
 
-  type tree 'a = Leaf | Node (tree 'a) 'a (tree 'a)
-
-  function occ (x: 'a) (t: tree 'a) : int
-  = match t with
-    | Leaf -> 0
-    | Node l y r ->
-        (if x = y then 1 else 0) + occ x l + occ x r
-    end
-
-  let rec lemma occ_nonneg (x: 'a) (t: tree 'a) : unit
-    ensures { occ x t >= 0 }
-    variant { t }
-  = match t with
-    | Leaf -> ()
-    | Node l _ r ->
-        occ_nonneg x l;
-        occ_nonneg x r
-    end
-
-  predicate mem (x: 'a) (t: tree 'a)
-  = occ x t > 0
-
-  predicate bin_search_tree (t: tree int)
-  = match t with
-    | Leaf -> true
-    | Node l x r ->
-        bin_search_tree l /\
-        bin_search_tree r /\
-        (forall y. mem y l -> y < x) /\
-        (forall y. mem y r -> y > x)
-    end
-
   type t = {
-          mutable data: tree int;
     ghost mutable view: fset int;
-  } invariant { bin_search_tree data }
-    invariant { forall x. mem x data <->
-                          Fset.mem x view }
-    by { data = Leaf; view = Fset.empty }
+  }
 
   let create () : t
-    ensures { result.view == Fset.empty }
-  = { data = Leaf; view = Fset.empty }
-
-  let rec insert_aux (x: int) (t: tree int) : tree int
-    requires { bin_search_tree t }
-    ensures  { forall y. y <> x -> occ y t = occ y result }
-    ensures  { mem x result }
-    ensures  { bin_search_tree result }
-    variant  { t }
-  = match t with
-    | Leaf -> Node Leaf x Leaf
-    | Node l y r ->
-        if x = y then t
-        else if x < y then Node (insert_aux x l) y r
-        else (* x > y *) Node l y (insert_aux x r)
-    end
+  = absurd
 
   let insert (x: int) (t: t) : unit
-    ensures { t.view == Fset.add x (old t.view) }
-  = t.data <- insert_aux x t.data;
-    t.view <- Fset.add x t.view
+  = absurd
 
   let function is_empty (t: t) : bool
-    ensures { result <-> t.view == Fset.empty }
-  = match t.data with
-    | Leaf -> true
-    | _ -> false
-    end
+  = absurd
 
   predicate is_min (x: int) (t: t)
 
