@@ -1,0 +1,70 @@
+module UF
+
+  use map.Map
+  use int.Int, int.MinMax
+  use array.Array, array.Init
+
+  type t = {
+                  link : array int;
+                  rank : array int;
+    ghost         size : int;
+    ghost mutable rep  : int -> int;
+    ghost mutable dst  : int -> int;
+    ghost mutable maxd : int;
+  } invariant { 0 <= maxd }
+    (* TO BE COMPLETED: EXERCISE 1 *)
+    by { size = 0; link = make 0 0; rank = make 0 0; rep = (fun i -> i);
+         dst  = (fun _ -> 0); maxd = 0; }
+
+  let create (n: int) : (r: t)
+  (* TO BE COMPLETED: EXERCISE 2 *)
+  = { size = n;
+      link = init n (fun i -> i);
+      rank = make n 0;
+      rep  = (fun i -> i);
+      dst  = (fun _ -> 0);
+      maxd = 0; }
+
+  let find_it (x: int) (uf: t) : (r: int)
+  (* TO BE COMPLETED: EXERCISE 3 *)
+  = let ref y = uf.link[x] in
+    while y <> uf.link[y] do
+      y <- uf.link[y]
+    done;
+    y
+
+  (* TO BE COMPLETED: EXERCISE 4 *)
+  let rec find (x: int) (uf: t) : (r: int)
+  = absurd
+
+  (** Auxiliary predicate to state two elements [i] and [j] belong to the same
+      equivalence class. Use it as you may find suitable. *)
+  predicate equiv (i j: int) (uf: t) =
+    0 <= i < uf.size -> 0 <= j < uf.size -> uf.rep i = uf.rep j
+
+  let union (i j: int) (uf: t) : (ghost old_rep : int)
+  (* TO BE COMPLETED: EXERCISE 5 *)
+  = let rep_i = find i uf in
+    let rep_j = find j uf in
+    if not rep_i = rep_j then
+      if uf.rank[rep_i] > uf.rank[rep_j] then begin
+        uf.link[rep_j] <- rep_i;
+        uf.rep <- pure {
+          (fun k -> if uf.rep k = uf.rep rep_j then rep_i else uf.rep k)};
+        uf.maxd <- uf.maxd + 1;
+        uf.dst  <- set uf.dst rep_i (1 + max (uf.dst rep_i) (uf.dst rep_j));
+        ghost 0 (* TO BE COMPLETED: EXERCISE 6 *)
+      end
+      else begin
+        uf.link[rep_i] <- rep_j;
+        uf.rep <- pure {
+          (fun k -> if uf.rep k = uf.rep rep_i then rep_j else uf.rep k)};
+        uf.maxd <- uf.maxd + 1;
+        uf.dst <- set uf.dst rep_j (1 + max (uf.dst rep_i) (uf.dst rep_j));
+        if uf.rank[rep_i] = uf.rank[rep_j] then
+          uf.rank[rep_i] <- uf.rank[rep_i] + 1;
+        ghost 0 (* TO BE COMPLETED: EXERCISE 6 *)
+      end
+    else
+      ghost 0 (* TO BE COMPLETED: EXERCISE 6 *)
+end

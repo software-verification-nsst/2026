@@ -13,6 +13,7 @@ Please inform before (by email) that you plan to attend office hours.
 | Handout | Statement                           | Companion files    |
 |---------|-------------------------------------|--------------------|
 | 1       | [Handout 1 (.pdf)](sv_handout1.pdf) | [arith.v](arith.v) |
+| 2       | [Handout 2 (.pdf)](sv_handout2.pdf) | [union_find.mlw](union_find.mlw) |
 
 ## Installation procedures
 
