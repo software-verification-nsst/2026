@@ -103,3 +103,5 @@ websites:
 | 7 | 3 Nov, 5 Nov | Exercises on Loop Invariants and Matrices |  | [Lab 7 (.pdf)](lab7/lab7.pdf) <br> [Why3 file (.mlw)](lab7/lab7.mlw) <!-- <br> [Solutions (.zip)](lab6/lab6_solutions.zip) --> |
 | 8 | 10 Nov | ADTs and Typestates | [Lecture 8 (slides)](lecture8.pdf) <!-- <br> [Lecture Notes](notes_sorting_searching.pdf) -->| |
 | 8 | 10 Nov, 12 Nov | Exercises on ADTs and Typestates |  | [Lab 8 (.pdf)](lab8/lab8.pdf) <br> [Why3 file (.mlw)](lab8/lab8.mlw) <!-- <br> [Solutions (.zip)](lab6/lab6_solutions.zip) --> |
+| 9 | 17 Nov | Separation Logic: Introduction | [Lecture 9 (slides)](lecture9.pdf) <!-- <br> [Lecture Notes](notes_sorting_searching.pdf) -->| |
+| 9 | 17 Nov, 19 Nov | Support class for Handout 2 |  |  |
